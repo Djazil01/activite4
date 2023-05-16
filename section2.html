@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Principes d'Internet</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.5;
+      }
+      h2 {
+        margin-bottom: 10px;
+        color: #54c78c;
+      }
+      h3 {
+        margin-bottom: 10px;
+        color: #54c78c;
+      }
+      ul {
+        margin-top: 0;
+        padding-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Chapitre 2 : principes d'internet</h2>
+
+    <h3>Définition réseau informatique :</h3>
+    <p>
+      Ensemble de périphériques ou d'ordinateurs reliés via un câble qui permet
+      l'échange et la transmission des données.
+    </p>
+    <p>
+      <strong>Avantages :</strong> Le partage des fichiers et du matériel, ce
+      qui permet une réduction des coûts et du temps.
+    </p>
+
+    <h3>Principaux types de réseaux :</h3>
+    <ol>
+      <li>
+        <strong>LAN (local) :</strong>
+        <ul>
+          <li>Limité géographiquement.</li>
+          <li>Topologie : bus, étoile, anneau.</li>
+          <li>Technologie : câbles à paires torsadées, wifi.</li>
+        </ul>
+      </li>
+      <li>
+        <strong>MAN :</strong>
+        <ul>
+          <li>
+            Relie plusieurs LAN géographiquement proches pour faciliter la
+            communication.
+          </li>
+          <li>Topologie : bus, étoile en général.</li>
+          <li>Aire géographique : 1 à 100 km.</li>
+          <li>Nombre de stations : plus de 1000 machines.</li>
+        </ul>
+      </li>
+      <li>
+        <strong>WAN :</strong>
+        <ul>
+          <li>
+            Interconnecte plusieurs réseaux LAN géographiquement éloignés.
+          </li>
+          <li>Aire géographique : toute la surface de la terre.</li>
+          <li>Topologie : bus, étoile en général.</li>
+          <li>Technologie : fibre optique.</li>
+        </ul>
+      </li>
+    </ol>
+
+    <h3>Topologies des réseaux :</h3>
+    <h4>Topologie en bus :</h4>
+    <ul>
+      <li>Tous les nœuds sont reliés par un conduit unique.</li>
+      <li>
+        Lorsqu'une station émet des données, elles circulent sur toute la
+        longueur du bus.
+      </li>
+    </ul>
+    <p><strong>Avantages :</strong></p>
+    <ul>
+      <li>Nécessite moins de câblage.</li>
+      <li>Facile à mettre en place.</li>
+      <li>
+        Si une station tombe en panne, le reste du réseau ne sera pas perturbé.
+      </li>
+    </ul>
+    <p><strong>Inconvénients :</strong></p>
+    <ul>
+      <li>La rupture du câble implique un dysfonctionnement du réseau.</li>
+    </ul>
+
+    <h4>Topologie en anneau :</h4>
+    <ul>
+      <li>Les ordinateurs sont reliés entre eux pour former un anneau.</li>
+      <li>
+        Un jeton circule autour de l'anneau, la station qui a le jeton émet les
+        données lorsque les données reviennent, le jeton passe vers la station
+        voisine.
+      </li>
+    </ul>
+    <p><strong>Avantages :</strong></p>
+    <ul>
+      <li>Aucune collision.</li>
+      <li>La panne d'un port nuit à l'ensemble du réseau.</li>
+    </ul>
+
+    <h4>Topologie en étoile :</h4>
+    <ul>
+      <li>
+        La communication entre les stations du réseau se fait par
+        l'intermédiaire d'un élément central.
+      </li>
+      <li>
+        Les données passent par un hub qui peut les envoyer à toutes les
+        machines, ou par un switch qui les transmet uniquement aux
+        destinataires.
+      </li>
+    </ul>
+    <p><strong>Avantages :</strong></p>
+    <ul>
+      <li>Une panne d'un port n'affecte pas l'ensemble du réseau.</li>
+      <li>Plus de câblage comparé aux autres topologies.</li>
+      <li>
+        Dépendance aux concentrateurs : si un concentrateur tombe en panne, les
+        ordinateurs ne peuvent plus communiquer.
+      </li>
+    </ul>
+
+    <h4>Topologie point à point (ou maillée) :</h4>
+    <ul>
+      <li>Utilisée dans les réseaux de distribution (exemple : internet)</li>
+      <li>
+        L'information parcourt le réseau en suivant des itinéraires divers.
+      </li>
+    </ul>
+    <p><strong>Inconvénients :</strong></p>
+    <ul>
+      <li>Le nombre de liaisons nécessaires devient très élevé.</li>
+    </ul>
+
+    <h3>Principaux composants d'interconnexion :</h3>
+    <ul>
+      <li>
+        <strong>Carte réseau :</strong> Constitue l'interface physique entre
+        l'ordinateur et le support de communication.
+      </li>
+      <li>
+        <strong>Concentrateur (hub) :</strong> Équipement physique avec
+        plusieurs ports servant à relier plusieurs ordinateurs. Il dirige les
+        données et les partage avec l'ensemble des machines connectées à lui.
+      </li>
+      <li>
+        <strong>Commutateur (switch) :</strong> Partage les données uniquement
+        avec le destinataire de ces données.
+      </li>
+      <li>
+        <strong>Passerelle :</strong> Dispositif servant à connecter des réseaux
+        de différentes architectures de protocoles. Exemple : internet et réseau
+        local.
+      </li>
+      <li>
+        <strong>Routeur :</strong> Matériel de communication de réseau
+        informatique servant à diriger l'information dans la direction
+        appropriée de manière optimale.
+      </li>
+      <li>
+        <strong>Modem :</strong> Lie le réseau téléphonique aux réseaux
+        informatiques. Il convertit le signal numérique en signal analogique et
+        vice versa.
+      </li>
+      <li>
+        <strong>Répéteur :</strong> Régénère un signal affaibli pendant le
+        transport, ce qui permet d'étendre la distance maximale entre deux nœuds
+        d'un réseau.
+      </li>
+    </ul>
+
+    <h3>Protocoles de communication :</h3>
+    <p>
+      Les protocoles de communication sont les consignes obligatoires à
+      respecter pour la communication entre les réseaux.
+    </p>
+    <p>
+      Les plus utilisés sont : HTTP, FTP, SMTP, POP. La plupart d'entre eux sont
+      bas és sur le protocole TCP/IP (Transmission Control Protocol/Internet
+      Protocol).
+    </p>
+    <p>
+      <strong>TCP/IP :</strong> Il représente les règles de communication sur
+      internet et repose sur la notion d'adresse IP.
+    </p>
+    <p>
+      L'adresse IP est une adresse unique attribuée à chaque ordinateur sur
+      internet, elle permet d'acheminer les données à la bonne destination. Les
+      adresses IP sont généralement notées avec quatre champs numériques compris
+      entre 0 et 255, séparés par des points. La version IPv4 est encore
+      actuellement la plus utilisée.
+    </p>
+    <p>
+      <strong>Adresse IP version 4 (IPv4) :</strong> Les adresses sont codées
+      sur 32 bits (2^32 = 4 294 967 296). Les adresses sont généralement notées
+      avec quatre champs numériques compris entre 0 et 255, séparés par des
+      points. La version IPv4 est encore actuellement la plus utilisée.
+    </p>
+    <p>
+      <strong>Représentation des adresses IPv6 :</strong> La forme préférée est
+      la notation "x:x:x:x:x:x:x:x", où "x" représente une valeur en hexadécimal
+      des 8 portions de 16 bits de l'adresse. Les lettres peuvent être écrites
+      en majuscules ou en minuscules.
+    </p>
+    <p>
+      <strong>Adresse IP statique/dynamique :</strong> On distingue deux
+      situations pour assigner une adresse IP à un équipement :
+    </p>
+    <ul>
+      <li>Manière statique : adresse fixe et configurée manuellement.</li>
+      <li>
+        Manière dynamique : l'adresse est automatiquement transmise et assignée
+        grâce au protocole DHCP (Dynamic Host Configuration Protocol).
+      </li>
+    </ul>
+    <p>
+      <strong>Structure d'une adresse IP :</strong> Une adresse IP est
+      constituée de deux parties :
+    </p>
+    <ul>
+      <li>ID de réseau : les nombres à gauche.</li>
+      <li>
+        ID d'hôte : les nombres à droite qui désignent les ordinateurs de ce
+        réseau.
+      </li>
+    </ul>
+    <p>
+      Pour déterminer les ID, on utilise les masques de sous-réseau sous forme
+      de 4 octets, où 0 indique une annulation et 1 indique une conservation.
+    </p>
+    <p>
+      <strong>Exemple :</strong> Pour connaître l'adresse du réseau associée à
+      l'adresse IP 34.208.123.12 avec le masque de réseau 255.0.0.0 :
+    </p>
+    <pre>
+      00100010.11010000.01111011.00001100 (34.208.123.12)
+    & 11111111.00000000.00000000.00000000 (255.0.0.0)
+    = 00100010.00000000.00000000.00000000 (34.0.0.0)
+      </pre
+    >
+
+    <h3>Classes des réseaux :</h3>
+    <p>
+      Les réseaux TCP/IP se divisent en 3 classes pour faciliter la recherche
+      d'un ordinateur sur le réseau.
+    </p>
+    <ul>
+      <li>
+        <strong>Classe A :</strong> Le premier octet représente le réseau. Il y
+        a 2^7 = 128 possibilités de réseaux. Les réseaux disponibles en classe A
+        vont de 1.0.0.0 à 126.0.0.0. Les octets en vert représentent les
+        ordinateurs du réseau, ce qui signifie que chaque réseau peut contenir
+        2^24-2=16,777,214 ordinateurs.
+      </li>
+      <li>
+        <strong>Classe B :</strong> Dans une adresse IP de classe B, les deux
+        premiers octets représentent le réseau. Les deux premiers bits sont 1 et
+        0, ce qui donne 2^14 = 16,384 possibilités de réseaux. Les réseaux
+        disponibles en classe B vont de 128.0.0.0 à 191.255.0.0. Les octets en
+        vert représentent les ordinateurs du réseau. Ainsi, chaque réseau peut
+        contenir 2^16-2=65,534 ordinateurs.
+      </li>
+      <li>
+        <strong>Classe C :</strong> Dans une adresse IP de classe C, les trois
+        premiers octets représentent le réseau. Les trois premiers bits sont 1,
+        1 et 0, ce qui donne 2^21 = 2,097,152 possibilités de réseaux. Les
+        réseaux disponibles en classe C vont de 192.0.0.0 à 223.255.255.0.
+        L'octet de droite représente les ordinateurs du réseau, ce qui signifie
+        que chaque réseau peut contenir 2^8-2=254 ordinateurs.
+      </li>
+    </ul>
+  </body>
+</html>

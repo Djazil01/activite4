@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    margin: 20px;
+  } h1 {
+      color: #54c78c;
+      font-size: 24px;
+      text-decoration: underline;
+    }</style>
+<body>
+
+
+<h1>introduction :</h1>
+<p>Le chapitre introduit Git et GitHub, expliquant leur diff&eacute;rence et leur importance dans la gestion de version. Il souligne &eacute;galement la popularit&eacute; de Git et l&apos;importance des syst&egrave;mes de gestion de version dans le monde actuel.</p>
+<p><br></p>
+<h1>2) A quoi sert concr&egrave;tement un syst&egrave;me de gestion de version ?</h1>
+<p>Le processus de sauvegarde et de restauration d&apos;un site web peut &ecirc;tre contraignant, surtout lorsque plusieurs personnes travaillent sur le m&ecirc;me site et d&eacute;veloppent des fonctionnalit&eacute;s diff&eacute;rentes qui peuvent &ecirc;tre li&eacute;es entre elles. Il est important de sauvegarder le site avant toute modification ou test afin de pouvoir le restaurer en cas de probl&egrave;me. Cependant, cela peut &ecirc;tre compliqu&eacute; lorsque plusieurs personnes sont impliqu&eacute;es dans le processus.</p>
+<p>Le travail en &eacute;quipe sur un projet informatique n&eacute;cessite une organisation complexe pour &eacute;viter les conflits entre les fonctionnalit&eacute;s d&eacute;velopp&eacute;es par chaque membre. Pour cela, il est recommand&eacute; de mettre en place un serveur distant qui contiendrait l&apos;historique des modifications faites par chaque d&eacute;veloppeur. Git est un logiciel de versioning qui permet de coordonner le travail entre plusieurs personnes en conservant un historique des changements effectu&eacute;s sur des fichiers, ainsi que la coexistence de diff&eacute;rentes versions d&apos;un m&ecirc;me fichier. Les d&eacute;veloppeurs peuvent ainsi acc&eacute;der &agrave; l&apos;historique des modifications pour l&apos;int&eacute;gralit&eacute; du projet et savoir qui a fait ces changements.</p>
+<p><br></p>
+<h1>3) Les deux mod&egrave;les des logiciels de gestion de version :</h1>
+<p>mod&egrave;le centralis&eacute; vs mod&egrave;le d&eacute;centralis&eacute;</h1>
+<p>Les logiciels de gestion de version sont bas&eacute;s sur deux mod&egrave;les : centralis&eacute; et d&eacute;centralis&eacute;. Le mod&egrave;le centralis&eacute; h&eacute;berge le code source sur un serveur distant, tandis que dans le mod&egrave;le d&eacute;centralis&eacute;, chaque utilisateur t&eacute;l&eacute;charge et h&eacute;berge le code source sur sa propre machine. Git a popularis&eacute; le mod&egrave;le d&eacute;centralis&eacute; qui offre des avantages tels que la simplicit&eacute; et la flexibilit&eacute; du travail, ainsi que la s&eacute;curit&eacute; gr&acirc;ce &agrave; la possibilit&eacute; d&apos;utiliser une copie du projet comme backup en cas de corruption du serveur central.</p>
+<p><br></p>
+<h1>4) Qu&rsquo;est-ce que GitHub ?</h1>
+<p><br></p>
+<p>Git est un logiciel de gestion de version qui permet d&apos;enregistrer les modifications effectu&eacute;es sur un projet et de revenir &agrave; une version pr&eacute;c&eacute;dente. Un d&eacute;p&ocirc;t est la copie de l&apos;int&eacute;gralit&eacute; des fichiers d&apos;un projet et de leur version situ&eacute;e sur le serveur central. GitHub est un service en ligne qui permet d&apos;h&eacute;berger des d&eacute;p&ocirc;ts Git, et c&apos;est le plus grand h&eacute;bergeur de d&eacute;p&ocirc;ts Git du monde. Les d&eacute;p&ocirc;ts h&eacute;berg&eacute;s sur GitHub sont souvent publics, ce qui signifie que n&apos;importe qui peut t&eacute;l&eacute;charger le code et contribuer &agrave; leur d&eacute;veloppement en proposant de nouvelles fonctionnalit&eacute;s.</p>
+<p><br></p>
+<h1>5) Utiliser Git : ligne de commande, console et interface:</h1>
+<h3>graphique:</h3>
+<p><br></p>
+<p>Le cours utilise la console en ligne de commande pour Git plut&ocirc;t qu&apos;une interface graphique car cela permet d&apos;avoir acc&egrave;s &agrave; toutes les commandes Git et que tout le monde peut suivre le cours de la m&ecirc;me mani&egrave;re. Savoir utiliser la version en ligne de commande permet &eacute;galement de savoir utiliser n&apos;importe quelle autre interface graphique. Pour ouvrir la ligne de commande sur Windows, on peut utiliser un raccourci clavier ou rechercher &quot;cmd&quot; dans la barre de recherche.</p>
+<p><br></p>
+<h1>6) Installation de Git:</h1>
+<p>Pour installer Git, il suffit de t&eacute;l&eacute;charger la derni&egrave;re version sur le site officiel<a data-fr-linked="true" href="http://git-scm.com/downloads">http://git-scm.com/downloads</a>, d&apos;ouvrir le fichier t&eacute;l&eacute;charg&eacute; et de suivre les instructions &agrave; l&apos;&eacute;cran en laissant les valeurs par d&eacute;faut.</p>
+<p><br></p>
+<h1>7)  Parametrage de Git:&nbsp;</h1>
+<p><br></p>
+<p>le parmetrage de git apres son installation facilite l&apos;enregistrement de donnees pour eviter a les fournir plus tard .on aura besoin du nom et adresse mail de l&apos;utilisateur.</p>
+<p>La premiere commande gitconfig permet de voir et modifier les variables de configuration et en lui passant l&apos;option globale elle nous permer d&apos;indiquer a git que le nom et l&apos;adresse mail doivent etre utiliser globalement .&nbsp;</p>
+
+
+<h1>&nbsp;8)  Demarrer un depot Git:&nbsp;</h1>
+<p><br></p>
+<p>&nbsp;Un &ldquo;d&eacute;p&ocirc;t&rdquo; correspond &agrave; la copie et &agrave; l&rsquo;importation &nbsp;des fichiers d&rsquo;un projet pour le cree on peut importer un repertoire ou cloner un depot existant.</p>
+<p><br></p>
+<h1>9) La gestion des informations selon Git:&nbsp;</h1>
+<p><br></p>
+<p>pour gerer les informations , a chaque enregistrement qu&apos;on fait Git prend un instentane du contenu de l&apos;espace du travail stockee dans une base de donnees locale &nbsp;et lui enregistre une reference .&nbsp;</p>
+<p><br></p>
+<h1>10) les etats des fichiers:&nbsp;</h1>
+<p><br></p>
+<p>On dit qu&apos;un fichier dans git est suivi s&apos;il est enregistre en base et non-suivi s&apos;il n&apos;appartenait pas au dernier instantane .</p>
+<p>les fichiers sont tous non suivi en damarant un depotgit en important un repertoire deja existant et ils sont tous suivi lorsqu&apos;on clone un depot deja existant .</p>
+<p>chaque fichier suivi peut avoir l&apos;etat : soit &quot;valide&quot; lorsqu&apos;il est stockee dans la base de donnees ou lors du clonage d&apos;un depot existant, ou &quot;modifie&quot; tant qu&apos;il n&apos;a pas ete indexe, et finalement &quot;indexe&quot; &nbsp;lorsqu&rsquo;on indique &agrave; Git que le fichier modifi&eacute; ou que&nbsp;</p>
+<p>le nouveau fichier doit faire partie du prochain instantan&eacute; dans sa version actuelle.</p>
+<p>&nbsp;</p>
+<p>Enfin,lorsqu&rsquo;on demande &agrave; Git de prendre l&rsquo;instantan&eacute; , les fichiers faisant partie a ce dernier sont consideres &quot;valides&quot;.</p>
+
+<h1>11)  Les zones de travail:&nbsp;</h1>
+<p><br></p>
+<p>En fonction de l&apos;etat d&apos;un fichier il peut apparaitre dans une de ces 3 zones:&nbsp;</p>
+
+<p>1/Le repertoir de travail ou les fichiers sont extraits de la base de donn&eacute;es compress&eacute;e</p>
+<p>et places sur le disque pour pouvoir les modifier.</p>
+<p>2/la zone d&apos;index qui stocke les informations concernant le prochain instantane .&nbsp;</p>
+<p>3/Le repertoire git la ou les meta-donnees et la base de donnees des objets du projets sont stockees</p>
+
+<h1>12) Creer un depot git a partir d&apos;un repertoire existant:&nbsp;</h1>
+<p>on aimerait souvent implementer un systeme de gestion de version a de projets en cours stockes localement ou sur serveur distant alors nous allons pouvoir importer l&rsquo;ensemble des ressources d&rsquo;un projet dans Git.&nbsp;</p>
+<p>on utilise la commande &quot;git init&quot; pour initialiser un depotGit qui est vide au debut.</h1>
+<p>Ensuite la commande &quot;git status&quot; sert a determiner l&apos;etat des fichiers et nous informe sur la branche sur laquelle on se trouve.L&rsquo;&eacute;tape suivante est d&apos;indexer les fichiers avec la commande &quot;git add&quot;,et d&apos;apres le nom qu&apos;on lui passe ce qu&apos;elle indexe differe.en lui passant le nom d&apos;un repertoire elle peut indexer un &quot;fileglob&quot; qui utilise les extensions de chemin de fichier. Apres, on valide le fichiers avec la commande &quot;git commit&quot;, en utilisant cette commande sans argument une nouvelle fenetre s&apos;ouvre qui est dans la majorite des cas VIM et qui demande d&apos;ajouter un message il suffit d&apos;ecrire &ldquo;Version initiale du projet&rdquo; et appuyer &quot;esc&quot; .</p>
+
+<p>&nbsp;</p>
+</body>
+
+
+
